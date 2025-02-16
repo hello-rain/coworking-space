@@ -1,0 +1,149 @@
+:root {
+  --clr-accent-500: hsl(8, 54%, 58%);
+  --clr-accent-400: hsl(8, 54%, 58%);
+  --clr-accent-300: hsl(32, 65%, 62%);
+
+  --clr-neutral-900: hsl(0, 0%, 16%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-primary: "Montserrat", serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-700: 2.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-700);
+  --fs-logo: var(var(--fs-500));
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0; /* Optional: Removes default margin */
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+}
+
+h1 {
+  margin: 30px 25px;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-900);
+}
+
+.nav-list {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 25px;
+}
+
+.item-img {
+  display: block;
+  width: 100%;
+}
+
+.item {
+  position: relative;
+}
+
+.img-banner {
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-100);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.caption {
+  margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--clr-accent-500);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.chatbox-bg {
+  display: flex;
+  background-color: var(--clr-accent-300);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #999;
+
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+}
+.chatbox-img {
+  width: 50%;
+  margin: auto;
+}
+
+/* Utility classes */
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-700);
+}
+
+.fs-logo {
+  font-size: var(--fs-logo);
+}
+
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+
+.align-right {
+  margin-left: auto;
+}
